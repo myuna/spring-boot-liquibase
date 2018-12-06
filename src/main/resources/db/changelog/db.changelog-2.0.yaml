@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: salem
+      changes:
+        - addColumn:
+            tableName: person
+            columns:
+              - column:
+                  name: email
+                  type: varchar(255)
