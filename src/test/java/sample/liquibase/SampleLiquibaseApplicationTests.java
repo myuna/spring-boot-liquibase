@@ -18,11 +18,9 @@ package sample.liquibase;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
-import org.springframework.boot.test.extension.OutputCapture;
 import org.springframework.core.NestedCheckedException;
 
 import java.net.ConnectException;
-import java.util.Objects;
 
 import static java.util.Objects.*;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -41,6 +39,7 @@ public class SampleLiquibaseApplicationTests {
                 return;
             }
         }
+
 
         assertThat(this.output).contains("Successfully acquired change log lock")
                 .contains("Creating database history table with name: PUBLIC.DATABASECHANGELOG")

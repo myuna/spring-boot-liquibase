@@ -1,0 +1,12 @@
+**/target/**
+**/logs/**
+**/.idea/
+*.iml
+*.classpath
+/.idea
+*/*.log
+/*.log
+*.log
+*.project
+**/.settings
+.flattened-pom.xml
