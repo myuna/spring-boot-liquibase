@@ -3,11 +3,11 @@
 ### How to run?
 compile, test, package
 ```bash
-./mvnw clean package
+make test
 ```
 run
 ```bash
-./mvnw spring-boot:run
+make run
 ```
 
 Go to http://localhost:8080/h2-console  
